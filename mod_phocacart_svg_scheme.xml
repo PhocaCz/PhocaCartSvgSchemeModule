@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" method="upgrade" version="4.0">
+	<name>mod_phocacart_svg_scheme</name>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<creationDate>11/08/2022</creationDate>
+	<authorEmail></authorEmail>
+	<authorUrl>https://www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<version>4.0.3</version>
+	<description>MOD_PHOCACART_SVG_SCHEME_DESCRIPTION</description>
+	<projectName>PhocaCartSvgSchemeModule</projectName>
+
+	<media destination="mod_phocacart_svg_scheme" folder="media">
+		<folder>css</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</media>
+
+	<files>
+		<folder>tmpl</folder>
+		<folder>models</folder>
+		<filename module="mod_phocacart_svg_scheme">helper.php</filename>
+		<filename module="mod_phocacart_svg_scheme">index.html</filename>
+		<filename module="mod_phocacart_svg_scheme">mod_phocacart_svg_scheme.php</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_phocacart_svg_scheme.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_phocacart_svg_scheme.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params" addfieldpath="/administrator/components/com_phocacart/models/fields">
+			<fieldset name="basic">
+
+
+
+
+		</fieldset>
+
+        <fieldset name="main" label="MOD_PHOCACART_SVG_SCHEME_FIELDSET_MAIN_LABEL">
+
+
+            <field name="main_background_image" default="" type="media" label="MOD_PHOCACART_SVG_SCHEME_FIELD_MAIN_BACKGROUND_IMAGE_LABEL" description="MOD_PHOCACART_SVG_SCHEME_FIELD_MAIN_BACKGROUND_IMAGE_DESC"/>
+
+
+            <field name="catid_multiple" type="phocacartcategory" label="MOD_PHOCACART_SVG_SCHEME_FIELD_CATEGORY_LABEL" description="MOD_PHOCACART_SVG_SCHEME_FIELD_CATEGORY_DESC" multiple="true" required="true" layout="joomla.form.field.list-fancy-select"/>
+
+            <field name="display_option" default="" size="10" type="text" label="MOD_PHOCACART_SVG_SCHEME_FIELD_DISPLAY_COMPONENT_LABEL" description="MOD_PHOCACART_SVG_SCHEME_FIELD_DISPLAY_COMPONENT_DESC"/>
+
+                <field name="display_view" default="" size="10" type="text" label="MOD_PHOCACART_SVG_SCHEME_FIELD_DISPLAY_VIEW_LABEL" description="MOD_PHOCACART_SVG_SCHEME_FIELD_DISPLAY_VIEW_DESC"/>
+
+			<field name="display_id" default="" size="10" type="text" label="MOD_PHOCACART_SVG_SCHEME_FIELD_DISPLAY_ID_LABEL" description="MOD_PHOCACART_SVG_SCHEME_FIELD_DISPLAY_ID_DESC"/>
+
+        </fieldset>
+
+        <fieldset name="items" label="MOD_PHOCACART_SVG_SCHEME_FIELDSET_MISC_LABEL">
+            <field name="tooltip_prefix_count_products_text" default="" size="10" type="text" label="MOD_PHOCACART_SVG_SCHEME_FIELD_TOOLTIP_COUNT_PRODUCTS_TEXT_PREFIX_LABEL" description="MOD_PHOCACART_SVG_SCHEME_FIELD_TOOLTIP_COUNT_PRODUCTS_TEXT_PREFIX_DESC"/>
+            <field name="tooltip_product_parameters" default="" size="10" type="text" label="MOD_PHOCACART_SVG_SCHEME_FIELD_TOOLTIP_PRODUCT_PARAMETERS_LABEL" description="MOD_PHOCACART_SVG_SCHEME_FIELD_TOOLTIP_PRODUCT_PARAMETERS_DESC"/>
+            <field name="tooltip_display_description" type="list" class="form-select" default="1" label="MOD_PHOCACART_SVG_SCHEME_FIELD_TOOLTIP_DISPLAY_DESCRIPTION_PRODUCT_LABEL" description="MOD_PHOCACART_SVG_SCHEME_FIELD_TOOLTIP_DISPLAY_DESCRIPTION_PRODUCT_DESC">
+                <option value="0">MOD_PHOCACART_SVG_SCHEME_NO</option>
+                <option value="1">MOD_PHOCACART_SVG_SCHEME_YES</option>
+
+            </field>
+
+            <field name="class_product_parameters" default="" size="10" type="text" label="MOD_PHOCACART_SVG_SCHEME_FIELD_CSS_CLASS_PRODUCT_PARAMETERS_LABEL" description="MOD_PHOCACART_SVG_SCHEME_FIELD_CSS_CLASS_PRODUCT_PARAMETERS_DESC"/>
+        </fieldset>
+
+
+        <fieldset name="advanced">
+				<field name="layout" class="form-select" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description=""/>
+				<field name="moduleclass_sfx" type="textarea" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="" rows="3"/>
+				<field name="cache" type="list" label="COM_MODULES_FIELD_CACHING_LABEL" description="" default="1" filter="integer">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="number" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="" default="900" filter="integer"/>
+				<field name="cachemode" type="hidden" default="static">
+					<option value="static"/>
+				</field>
+            </fieldset>
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="extension" name="MOD_PHOCACART_SVG_SCHEME" priority="1"><![CDATA[https://raw.githubusercontent.com/PhocaCz/PhocaCartSvgSchemeModule/main/manifest.xml]]></server>
+	</updateservers>
+</extension>

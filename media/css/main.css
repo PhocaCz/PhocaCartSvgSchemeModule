@@ -1,0 +1,75 @@
+#pcSvgBox svg polygon {
+    fill: transparent;
+    border: none;
+}
+
+#pcSvgBox svg polygon:visited,
+#pcSvgBox svg polygon:focus,
+#pcSvgBox svg polygon:active,
+#pcSvgBox svg polygon:hover {
+    fill: #6c8c8c;
+    opacity: 0.5;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: all .5s ease;
+    outline: none;
+}
+
+#phSVGSchemePopup .modal-content {
+    /*width: 90vw;
+    height: 90vh;*/
+}
+
+
+.pc-svg-scheme-category-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pc-svg-scheme-category-list .pcSVGSchemeCategoryListItem {
+
+    border-radius: 3px;
+    background: #6c8c8c;
+    color: #fff;
+    padding: 0 0.5em;
+    margin: 0.3em;
+
+}
+
+.pcSVGSchemeCategoryListItem.active,
+.pcSVGSchemeCategoryListItem:hover {
+    background: #0c2c40;
+}
+
+
+/* Tooltip */
+[data-tippy-content] {
+    cursor: pointer;
+}
+
+.tippy-box[role="tooltip"]:not(.show) {
+    right: unset;
+    z-index: unset;
+    display: block;
+    max-width: unset;
+    padding: 1em;
+    margin: unset;
+    color: #fff;
+    text-align: unset;
+    background: #0c2c40;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+/* Possible default background based on Product parameter value alias */
+/*
+#pcSvgBox svg polygon.pcSVGSchemeProductItem.parameter-value-alias {
+    fill: red;
+    opacity: 0.3;
+}
+*/

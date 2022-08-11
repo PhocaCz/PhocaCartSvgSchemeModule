@@ -1,0 +1,19 @@
+{
+	"author": "Jan Pavelka (www.phoca.cz)",
+	"authorUrl": "https://www.phoca.cz",
+	"copyright": "Jan Pavelka",
+	"license": "GNU/GPL",
+	"projectName": "PhocaCartSvgSchemeModule",
+	"extensionName": "Phoca Cart SVG Scheme module",
+	"projectInitials" : "PC",
+	"description": "Phoca Cart SVG Scheme Module - a Joomla! CMS module which displays Phoca Cart categories and products in SVG scheme.",
+	"projectUrl": "https://www.phoca.cz/phocacart-extensions/1-modules/72-phoca-cart-svg-scheme-module",
+	"projectMainComponent": "Phoca Cart",
+	"projectMainComponentInfoUrl": "https://www.phoca.cz/project/phocacart-joomla-ecommerce",
+	"projectDocumentationUrl": "https://www.phoca.cz/documentation/category/115-phoca-cart",
+	"projectDemo" : {
+		"Phoca Cart 4 Demo": "https://www.phoca.cz/phocacart4demo/"
+	},
+	"projectColor": "#129ed9",
+	"projectBranch": "main"
+}
