@@ -1,21 +1,23 @@
+<?xml version="1.0" ?>
 <updates>
 	<update>
 		<name><![CDATA[ Phoca Cart SVG Scheme module ]]></name>
 		<description><![CDATA[ Phoca Cart SVG Scheme Module - a Joomla! CMS module which displays Phoca Cart categories and products in SVG scheme. ]]></description>
 		<element>mod_phocacart_svg_scheme</element>
 		<type>module</type>
-		<version>4.0.3</version>
-		<infourl title="Phoca Cart SVG Scheme module 4.0.3">https://www.phoca.cz/</infourl>
+		<version>4.0.8</version>
+		<infourl title="Phoca Cart SVG Scheme module 4.0.8">https://www.phoca.cz/</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaCartSvgSchemeModule/releases/download/4.0.3/mod_phocacart_svg_scheme_v4.0.3.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaCartSvgSchemeModule/releases/download/4.0.8/mod_phocacart_svg_scheme_v4.0.8.zip</downloadurl>
 		</downloads>
+		<sha512>fe2e6fd1cbca141568899d9931c031b9f6bb00ae5825a93f18c1b4bbc982177379974d986157933997c6bf9b8d757cf81dffda8d3f844bb13ff01bc2973f9e65</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>
 		<maintainer><![CDATA[ Phoca.cz ]]></maintainer>
 		<maintainerurl>https://www.phoca.cz/</maintainerurl>
 		<section>Updates</section>
-		<targetplatform name="joomla" version="4.[012]"/>
+		<targetplatform name="joomla" version="4\.*"/>
 		<client>site</client>
 	</update>
 </updates>

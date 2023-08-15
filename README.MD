@@ -54,7 +54,7 @@ Phoca Cart SVG Scheme Module - a Joomla! CMS module which displays Phoca Cart ca
 
 ## Version (Joomla! 4.x)
 
-4.0.3
+4.0.8
 
 
 

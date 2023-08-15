@@ -2,12 +2,12 @@
 <extension type="module" client="site" method="upgrade" version="4.0">
 	<name>mod_phocacart_svg_scheme</name>
 	<author>Jan Pavelka (www.phoca.cz)</author>
-	<creationDate>11/08/2022</creationDate>
+	<creationDate>15/08/2023</creationDate>
 	<authorEmail></authorEmail>
 	<authorUrl>https://www.phoca.cz</authorUrl>
 	<copyright>Jan Pavelka</copyright>
 	<license>GNU/GPL</license>
-	<version>4.0.3</version>
+	<version>4.0.8</version>
 	<description>MOD_PHOCACART_SVG_SCHEME_DESCRIPTION</description>
 	<projectName>PhocaCartSvgSchemeModule</projectName>
 
@@ -23,6 +23,7 @@
 		<filename module="mod_phocacart_svg_scheme">helper.php</filename>
 		<filename module="mod_phocacart_svg_scheme">index.html</filename>
 		<filename module="mod_phocacart_svg_scheme">mod_phocacart_svg_scheme.php</filename>
+		<filename module="mod_phocacart_svg_scheme">manifest.xml</filename>
 	</files>
 
 	<languages>

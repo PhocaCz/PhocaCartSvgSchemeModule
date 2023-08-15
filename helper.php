@@ -8,7 +8,9 @@
  */
 
 use Joomla\CMS\Factory;
+use Joomla\CMS\Helper\ModuleHelper;
 use Joomla\CMS\HTML\HTMLHelper;
+use Joomla\CMS\Router\Route;
 use Joomla\Registry\Registry;
 use Joomla\CMS\Image\Image;
 
@@ -28,7 +30,7 @@ class ModPhocaCartSVGSchemeHelper
 		$lang = Factory::getLanguage();
 		$lang->load('com_phocacart');
 
-		$module = JModuleHelper::getModule('phocacart_svg_scheme');
+		$module = ModuleHelper::getModule('phocacart_svg_scheme');
 
 		if (!$module || (isset($module->id) && (int)$module->id < 1)) {
 		    // Module is not published
@@ -106,7 +108,6 @@ class ModPhocaCartSVGSchemeHelper
 
                             $url = PhocacartRoute::getItemRoute((int)$v['id'], (int)$v['category_id'], $v['alias'], $v['category_alias']);
 
-
                             // Product parameters
                             $suffix = '';
                             $classSuffix = '';
@@ -141,7 +142,7 @@ class ModPhocaCartSVGSchemeHelper
                                 $suffix           .= ' &bull; ' . $v['description'];
                             }
 
-                            echo '<a href="'.$url.'">';
+                            echo '<a href="'.Route::_($url).'">';
                             echo '<polygon class="pcSVGSchemeProductItem'.$classSuffix.'" data-id="'.$v['id'].'" points="'.$v['special_parameter'].'" data-tippy-content="'.$v['title'].$suffix.'"></polygon>';
                             echo '</a>';
                         }

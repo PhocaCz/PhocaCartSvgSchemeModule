@@ -42,13 +42,15 @@ $wa->registerAndUseScript('mod_phocacart_svg_scheme.tippy', 'media/mod_phocacart
 
 $wa->registerAndUseScript('mod_phocacart_svg_scheme', 'media/mod_phocacart_svg_scheme/js/phocacartsvgscheme.js');
 
+$moduleclass_sfx 			= htmlspecialchars((string)$params->get('moduleclass_sfx', ''), ENT_COMPAT, 'UTF-8');
+
 $pCom						= PhocacartUtils::getComponentParameters();
 //$pc['display_webp_images']	= $pCom->get( 'display_webp_images', 0 );
 
 $p = [];
 $p['main_background_image']			            = $params->get( 'main_background_image', '' );
 $p['catid_multiple']				            = $params->get( 'catid_multiple', '' );
-$p['tootltip_prefix_count_products_text']		= $params->get( 'tooltip_prefix_count_products_text', '' );
+$p['tooltip_prefix_count_products_text']		= $params->get( 'tooltip_prefix_count_products_text', '' );
 
 $p['display_view'] 			= $params->get( 'display_view', '');
 $p['display_option'] 		= $params->get( 'display_option', '');
